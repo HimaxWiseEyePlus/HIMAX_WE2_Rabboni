@@ -1,8 +1,12 @@
-# TFLM_IMU_APP supports ATCMD server
+## TFLM_IMU_APP supports ATCMD server
 ### This example initializes UART1 communication with the MDBT50Q and configures the ATCMD server to receive AT commands. The following AT commands are supported.
 
-Command terminator : "\r" (0x0d)
+- Command terminator : "\r" (0x0d)
    ex. "AT+HELP\r"
+
+### Grove Vision AI Module V2 UART1 connected to MDBT50Q
+- Grove Vision AI Module V2
+    ![alt text](../../../../images/grove_vision_ai_v2_uart1.png)
 
 ### INPUT :
     AT+HELP
@@ -146,6 +150,4 @@ Command terminator : "\r" (0x0d)
     python xmodem\xmodem_send.py --port=COM3 --baudrate=921600 --protocol=xmodem --file=we2_image_gen_local\output_case1_sec_wlcsp\output.img --model="model_zoo\tflm_imu_app\cnn_model_zaxis-1_vela_0x200000.tflite 0x200000 0x00000"
     ```
 hint1: COM3 should be change by [your COM number]
-
-hint2: 0x200000 is the model position which sets on 
-~\EPII_CM55M_APP_S\app\scenario_app\tflm_imu_app\common_config.h L25
+hint2: 0x200000 is the model position which sets on ~\EPII_CM55M_APP_S\app\scenario_app\tflm_imu_app\common_config.h L25
