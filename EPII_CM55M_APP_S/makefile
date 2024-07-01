@@ -142,8 +142,10 @@ CUSTOMER ?= seeed
 # pdm_record
 # imu_read
 # hello_world_cmsis_dsp
+# tflm_nycu_z_axsis
+# tflm_imu_app
 ##
-APP_TYPE = allon_sensor_tflm
+APP_TYPE = tflm_imu_app
  
 ### Options above must be added before include options.mk ###
 override EPII_ROOT := $(strip $(subst \,/,$(EPII_ROOT)))

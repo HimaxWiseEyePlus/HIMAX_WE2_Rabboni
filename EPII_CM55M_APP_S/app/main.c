@@ -204,3 +204,28 @@ int main(void)
 }
 #endif
 
+
+#ifdef TFLM_NYCU_Z_AXSIS
+#include "tflm_nycu_z_axsis.h"
+
+/** main entry */
+int main(void)
+{
+	board_init();
+	tflm_nycu_z_axsis_app();
+	return 0;
+}
+#endif
+
+
+#ifdef TFLM_IMU_APP
+#include "tflm_imu_app.h"
+
+/** main entry */
+int main(void)
+{
+	board_init();
+	app_main();
+	return 0;
+}
+#endif

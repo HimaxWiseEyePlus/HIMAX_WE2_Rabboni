@@ -4,6 +4,7 @@
         "sec_format": "BLP",
 		"pat_type": 0,
         "version": 2,
+        "flash_addr": "0x14000",
         "exec_addr": "0x34005000"
     },
     "2nd_bootloader": {
@@ -11,6 +12,7 @@
         "sec_format": "BLP",
 		"pat_type": 1,
         "version": 2,
+        "flash_addr": "0x1000",
         "exec_addr": "0x3401f000" 
     },
     "hx_memory_descriptor": {
