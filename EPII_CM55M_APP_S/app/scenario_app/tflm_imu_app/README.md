@@ -7,6 +7,7 @@
 ### Grove Vision AI Module V2 UART1 connected to MDBT50Q
 - Grove Vision AI Module V2
     ![alt text](../../../../images/grove_vision_ai_v2_uart1.png)
+    ![alt text](../../../../images/tflm_imu_app_uart.png)
 
 ### INPUT :
     AT+HELP
