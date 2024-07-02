@@ -17,6 +17,30 @@ EVENTHANDLER_SUPPORT_LIST += evt_datapath
 ##
 LIB_SEL = pwrmgmt sensordp tflmtag2209_u55tag2205 spi_ptl spi_eeprom hxevent
 
+################
+## Config APP ##
+################
+USE_APP_MAIN_MK = y
+APPL_APP_ROOT = $(SCENARIO_APP_ROOT)/$(APP_TYPE)
+
+##################
+## Header files ##
+##################
+APPL_APP_INCDIR_LIST += atcmd
+
+#####################
+## CC source files ##
+#####################
+APPL_APP_CSRC_LIST   += atcmd/el_2nd_bl.c
+APPL_APP_CCSRC_LIST  += atcmd/atcmd_server.cpp \
+						atcmd/el_misc_we2.cpp \
+						atcmd/el_serial2_we2.cpp
+
+## append file path
+APPL_APP_CSRCS = $(addprefix $(APPL_APP_ROOT)/, $(APPL_APP_CSRC_LIST))
+APPL_APP_CCSRCS = $(addprefix $(APPL_APP_ROOT)/, $(APPL_APP_CCSRC_LIST))
+APPL_APP_INCDIRS = $(addprefix $(APPL_APP_ROOT)/, $(APPL_APP_INCDIR_LIST))
+
 ##
 # middleware support feature
 # Add new middleware here
