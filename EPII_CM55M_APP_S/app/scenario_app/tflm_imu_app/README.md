@@ -130,23 +130,23 @@
 
 ## How to build TFLM_IMU_APP and run on WE2?
 ### Linux Environment
-- Change the `APP_TYPE` to `tflm_imu_app` at [makefile](https://github.com/HimaxWiseEyePlus/Seeed_Grove_Vision_AI_Module_V2_Rabboni/blob/main/EPII_CM55M_APP_S/makefile)
+- Change the `APP_TYPE` to `tflm_imu_app` at [makefile](https://github.com/HimaxWiseEyePlus/HIMAX_WE2_Rabboni/blob/main/EPII_CM55M_APP_S/makefile)
     ```
     APP_TYPE = tflm_imu_app
     ```
-- Build the firmware reference the part of [Build the firmware at Linux environment](https://github.com/HimaxWiseEyePlus/Seeed_Grove_Vision_AI_Module_V2_rabboni?tab=readme-ov-file#build-the-firmware-at-linux-environment)
+- Build the firmware reference the part of [Build the firmware at Linux environment](https://github.com/HimaxWiseEyePlus/HIMAX_WE2_Rabboni?tab=readme-ov-file#build-the-firmware-at-linux-environment)
 
 - Compile the firmware
 - Generate firmware image file
 - Flash the firmware to Grove Vision AI V2
 
 ### Burn prebuild ATCMD server firmware image tflm_imu_app.img and model into flah
-- change directory to "Seeed_Grove_Vision_AI_Module_V2_Rabboni"
+- change directory to "HIMAX_WE2_Rabboni"
     ```
     python xmodem\xmodem_send.py --port=COM3 --baudrate=921600 --protocol=xmodem --file=tflm_imu_app.img --model="model_zoo\tflm_imu_app\cnn_model_zaxis-1_vela_0x200000.tflite 0x200000 0x00000"
     ```
 ### Burn user's tflm_imu_app.img and model into flash
-- change directory to "Seeed_Grove_Vision_AI_Module_V2_Rabboni"
+- change directory to "SHIMAX_WE2_Rabboni"
     ```
     python xmodem\xmodem_send.py --port=COM3 --baudrate=921600 --protocol=xmodem --file=we2_image_gen_local\output_case1_sec_wlcsp\output.img --model="model_zoo\tflm_imu_app\cnn_model_zaxis-1_vela_0x200000.tflite 0x200000 0x00000"
     ```

@@ -53,13 +53,13 @@
 4. Setup VS Code toolchain and source path
    - Edit EPII_CM55M_APP_S/.vscode/tasks.json
      - Replace toolchain path "/toolchain/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi" to your toolchain path
-     - Replace source code path "/home/steve/Seeed_Grove_Vision_AI_Module_V2/EPII_CM55M_APP_S" to your source path
+     - Replace source code path "/home/steve/HIMAX_WE2_Rabboni/EPII_CM55M_APP_S" to your source path
    - Edit EPII_CM55M_APP_S/.vscode/settings.json
      - Replace toolchain path "/toolchain/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi" to your toolchain path
-     - Replace source code path "/home/steve/Seeed_Grove_Vision_AI_Module_V2/EPII_CM55M_APP_S" to your source path
+     - Replace source code path "/home/steve/HIMAX_WE2_Rabboni/EPII_CM55M_APP_S" to your source path
    - Edit EPII_CM55M_APP_S/.vscode/launch.json
      - Replace toolchain path "/toolchain/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi" to your toolchain path
-     - Replace source code path "/home/steve/Seeed_Grove_Vision_AI_Module_V2/EPII_CM55M_APP_S" to your source path
+     - Replace source code path "/home/steve/HIMAX_WE2_Rabboni/EPII_CM55M_APP_S" to your source path
      - Replace server path "/home/steve/.local/bin/pyocd" to your pyocd path
 
 ###
@@ -71,7 +71,7 @@
 ###
 6. Force Seeed Grove Vision AI Module V2 in debugging mode without running application in flash
     - Plug in Seeed Grove Vision AI Module V2
-    - Open Minicom, setup serial port and COM Port name-> connect to Grove Vision AI Module V2. (Please reference https://github.com/HimaxWiseEyePlus/Seeed_Grove_Vision_AI_Module_V2/blob/main/README.md)
+    - Open Minicom, setup serial port and COM Port name-> connect to Grove Vision AI Module V2. (Please reference https://github.com/HimaxWiseEyePlus/HIMAX_WE2_Rabboni/blob/main/README.md)
     - Hold down any key on the keyboard (except the Enter key) and press the reset button to reset Grove Vision AI Module V2 and the startup options will be displayed.
     ![alt text](../images/grove_vision_ai_v2.png)
     ![alt text](../images/enter_debugging_mode.png)
